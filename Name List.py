@@ -1,5 +1,5 @@
 import streamlit as st
-import functions as fun
+import NameList_function as fun
 nlist = fun.show()
 number = ''
 checkbox = ''
@@ -10,8 +10,8 @@ def clear():
     st.session_state['name'] = ""
     st.session_state['rname'] = ""
 
-st.title("Name List Application")
-st.subheader("This is a application where you can add, edit and delete names from a list.")
+st.title("Name List")
+st.subheader("This application allows you to add, edit and delete names from a list.")
 st.write("Created By: Jemael E Autridge")
 st.text_input(label="", placeholder="Enter New Name", on_change=add_n, key='name')
 st.text_input(label="", placeholder="Enter Replacement Name", key='rname')
